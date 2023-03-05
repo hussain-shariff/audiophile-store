@@ -5,6 +5,7 @@ import {
     XMarkIcon
     } from '@heroicons/react/24/outline'
 import MenuCard from './MenuCard';
+import menuCardData from '../data'
 
 function Header() {
     const [menuToggle, setMenuToggle] = useState(false);
@@ -36,8 +37,13 @@ function Header() {
             </div>
             <ShoppingCartIcon className='h-6 text-white cursor-pointer'/>
         </div>
-        {menuToggle && <div className='mt-20' >
-            <MenuCard/>
+        {menuToggle && <div className='mt-20 md:hidden' >
+            {menuCardData.map((item, idx)=>(
+                    <MenuCard
+                    key={idx} 
+                    name={item.name}
+                    img={item.img}/>
+                ))}
         </div>}
     </div>
     </>
