@@ -15,7 +15,6 @@ function Header() {
     }
 
   return (
-    <>
     <div>
         <div className='bg-black flex justify-between items-center text-white font-sans px-3 py-6 border-b border-gray-800 md:max-w-5xl md:mx-auto'>
             {!menuToggle && 
@@ -46,8 +45,6 @@ function Header() {
                 ))}
         </div>}
     </div>
-    </>
-    
   )
 }
 

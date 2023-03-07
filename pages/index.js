@@ -1,4 +1,5 @@
 import Header from '@/components/Header'
+import HeroSection from '@/components/HeroSection'
 import Head from 'next/head'
 
 export default function Home() {
@@ -10,11 +11,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <header className='md:bg-black'>
+      <header className='md:bg-black '>
         <Header/>
+        <HeroSection/>
       </header>
       <main>
-      
+        
       </main>
     </>
   )
